@@ -19,7 +19,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "set -e; for t in test/*.js; do node $t; done",
-    "start": "./build.sh && ecstatic ./static --autoIndex"
+    "start": "./build.sh && rumours --static static"
   },
   "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
   "license": "MIT"
