@@ -5,19 +5,7 @@ var hash    = require('hash-change')
 
 var text = h('textarea', {cols: 80, rows: 24, disabled: true})
 var rumours = RUMOURS = Rumours({
-  db: 'css-colab',
-
-/*
-  host: (
-  //connect to central server if there is one!
-  window.location.hostname == 'localhost' 
-  ? 'http://localhost:4567'
-  : 'http://rumoursdb.com'
-  )
-*/
-//,
-//  host: 'http://localhost:4567'
-  //  host: 'http://rumoursdb.com:4567'
+  db: 'css-colab'
 })
 
 var opened = {}
@@ -27,12 +15,10 @@ var opened = {}
 //of a Scuttlebutt then we'd be able to roll this out by just
 //adding the stylesheet as a link to that route!
 
-
 hash.on('change', onChange)
 onChange()
 
 function onChange() {
-
   var host = hash.hash() || window.location.host
 
   //close models/views that where opened.
