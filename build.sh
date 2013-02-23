@@ -7,7 +7,7 @@ browserify css.js -o static/css-colab.js --debug
 #  echo '<script'\
 #  'src=http://rumoursdb.com/examples/css-colab/css-colab.js>'\
 #  '></script>'
-  echo '<script>if(window.location.hash != "#CSS-LAB") CssColab("CSS-LAB")</script>'
+#  echo '<script>if(window.location.hash != "#CSS-LAB") CssColab("CSS-LAB")</script>'
   echo '</head><body></body><script>'
   browserify client.js --debug --exports require || exit 1
   echo '</script></html>'
