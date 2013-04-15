@@ -42,10 +42,13 @@ border-top-right-radius: 6px;
 }
 
 textarea {
-border: 0 px;
-background-color: #eeeeee;
-color:#343434;
-padding-left: 10px;
-margin: 10px;
+  border: 0 px;
+  background-color: #eeeeee;
+  color:#343434;
+  padding-left: 10px;
+  margin: 10px;
+  width: 100%;
+  font-size: 1.5em;
 }
+
 
